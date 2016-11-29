@@ -1,7 +1,7 @@
 ## The following two functions calculate and store (cache) the inverse of a matrix
 
 ## makeCacheMatrix creates an object that stores a matrix, can store it's inverse and 
-## contains functions to set and extract the matrix and it's inverse
+## contains fuctions to set and extract the matrix and it's inverse
 
 makeCacheMatrix <- function(x = matrix()) {
 	inv <- NULL
@@ -27,7 +27,7 @@ makeCacheMatrix <- function(x = matrix()) {
 cacheSolve <- function(x,...) {
 	i <- x$getinv()
 	
-	if(!is.null(x$getinv() )) {
+	if(!is.null(i)) {
 		message("getting cached data")
 		return(i)
 	}
